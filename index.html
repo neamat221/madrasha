@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>বার্ষিক পরীক্ষা - ২০২৬ ইং | সময়সূচি</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background: #00e5ee;
+        font-family:
+          "Hind Siliguri", "Noto Sans Bengali", "Kalpurush", "SolaimanLipi",
+          sans-serif;
+        padding: 46px;
+        min-height: 100vh;
+      }
+
+      /* outer black frame + cream paper */
+      .frame {
+        max-width: 1600px;
+        margin: 0 auto;
+        border: 4px solid #000;
+        padding: 6px;
+        background: #00e5ee;
+      }
+      .paper {
+        background: #fffde8;
+        border: 1.5px solid #000;
+        padding: 18px 24px 14px 24px;
+        position: relative;
+      }
+
+      /* heading */
+      .title {
+        text-align: center;
+        color: #1a2bb0;
+        font-family: "Noto Sans Bengali", "Hind Siliguri", sans-serif;
+        font-weight: 800;
+        font-size: clamp(22px, 3.7vw, 54px);
+        line-height: 1.25;
+        padding-left: 12%;
+      }
+      .sub {
+        text-align: center;
+        color: #e0197d;
+        font-weight: 600;
+        font-size: clamp(16px, 2.2vw, 34px);
+        margin-top: 6px;
+        padding-left: 0;
+      }
+      .badge-wrap {
+        text-align: center;
+        margin: 14px 0 18px;
+      }
+      .badge {
+        display: inline-block;
+        background: #fff;
+        border: 2px solid #000;
+        border-radius: 12px;
+        box-shadow: 0 2px 0 #999;
+        padding: 4px 26px;
+        font-weight: 800;
+        font-size: clamp(16px, 2.1vw, 32px);
+        color: #000;
+      }
+
+      /* table */
+      .table-scroll {
+        overflow-x: auto;
+      }
+      table {
+        width: 100%;
+        min-width: 1000px;
+        border-collapse: collapse;
+        table-layout: fixed;
+        background: #fffde8;
+        color: #222;
+      }
+      th,
+      td {
+        border: 1px solid #777;
+        text-align: center;
+        vertical-align: middle;
+        font-size: clamp(11px, 1.35vw, 21px);
+        line-height: 1.45;
+        padding: 4px 4px;
+        font-weight: 500;
+      }
+      col.c0 {
+        width: 10.6%;
+      }
+      col.cf {
+        width: 8.9%;
+      }
+      tr.head th,
+      tr.head td {
+        height: 30px;
+        font-weight: 500;
+      }
+      tr.head.dates td,
+      tr.head.times td {
+        white-space: nowrap;
+        font-size: clamp(10px, 1.2vw, 18px);
+        letter-spacing: -0.2px;
+      }
+      tr.row td {
+        height: 100px;
+      }
+      td.cls {
+        font-weight: 500;
+      }
+      td.small {
+        font-size: clamp(10px, 1.15vw, 18px);
+        line-height: 1.5;
+      }
+
+      /* Friday closed */
+      td.friday {
+        background: #fffde8;
+        color: #e0231f;
+        font-weight: 800;
+        font-size: clamp(30px, 4.4vw, 68px);
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        letter-spacing: 2px;
+        line-height: 1;
+        font-family: "Noto Sans Bengali", "Hind Siliguri", sans-serif;
+      }
+
+      /* notes */
+      .notes {
+        list-style: none;
+        margin-top: 8px;
+        font-size: clamp(11px, 1.2vw, 18px);
+        line-height: 1.7;
+      }
+      .notes li {
+        position: relative;
+        padding-left: 34px;
+        color: #111;
+      }
+      .notes li::before {
+        content: "";
+        position: absolute;
+        left: 6px;
+        top: 0.62em;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #000;
+      }
+      .notes b {
+        font-weight: 700;
+      }
+
+      .sign {
+        text-align: right;
+        font-size: clamp(10px, 1vw, 15px);
+        margin: -22px 60px 0 0;
+        color: #111;
+      }
+
+      @media (max-width: 700px) {
+        body {
+          padding: 10px;
+        }
+        .paper {
+          padding: 12px 10px;
+        }
+        .title {
+          padding-left: 0;
+        }
+        .sign {
+          margin: 6px 0 0;
+        }
+      }
+
+      @media print {
+        body {
+          background: #fff;
+          padding: 0;
+        }
+        @page {
+          size: A4 landscape;
+          margin: 8mm;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="frame">
+      <div class="paper">
+        <h1 class="title">হাতেমিয়া নূরানী মডেল ক্যাডেট মাদ্রাসা</h1>
+        <div class="sub">বার্ষিক পরীক্ষা - ২০২৬ ইং</div>
+
+        <div class="badge-wrap"><span class="badge">সময়সূচি</span></div>
+
+        <div class="table-scroll">
+          <table>
+            <colgroup>
+              <col class="c0" />
+              <col />
+              <col />
+              <col />
+              <col />
+              <col class="cf" />
+              <col />
+              <col />
+              <col />
+              <col />
+            </colgroup>
+
+            <tr class="head dates">
+              <td>তারিখ</td>
+              <td>07/12/26</td>
+              <td>08/12/26</td>
+              <td>09/12/26</td>
+              <td>10/12/26</td>
+              <td>11/12/26</td>
+              <td>12/12/26</td>
+              <td>13/12/26</td>
+              <td>14/12/26</td>
+              <td>15/12/26</td>
+            </tr>
+            <tr class="head">
+              <td>বার</td>
+              <td>সোমবার</td>
+              <td>মঙ্গলবার</td>
+              <td>বুধবার</td>
+              <td>বৃহস্পতিবার</td>
+              <td>শুক্রবার</td>
+              <td>শনিবার</td>
+              <td>রবিবার</td>
+              <td>সোমবার</td>
+              <td>মঙ্গলবার</td>
+            </tr>
+            <tr class="head times">
+              <td>সময়</td>
+              <td>9.00-12.00</td>
+              <td>9.00-12.00</td>
+              <td>9.00-12.00</td>
+              <td>9.00-12.00</td>
+              <td></td>
+              <td>9.00-12.00</td>
+              <td>9.00-12.00</td>
+              <td>9.00-12.00</td>
+              <td>9.00-12.00</td>
+            </tr>
+
+            <!-- শিশু-প্রে -->
+            <tr class="row">
+              <td class="cls">শিশু-প্রে<br />জামাত</td>
+              <td>আরবী<br />লিখিত</td>
+              <td>আরবী<br />মৌখিক</td>
+              <td>বাংলা<br />লিখিত</td>
+              <td>হাদীস শরীফ<br />মৌখিক</td>
+              <td class="friday" rowspan="5">শুক্রবার বন্ধ</td>
+              <td>ইংরেজী<br />লিখিত</td>
+              <td>আকাঈদ, ফিকাহ<br />ও দু'আ<br />মৌখিক</td>
+              <td>গনিত<br />লিখিত</td>
+              <td class="small">সাধারণ জ্ঞান<br />ও ইলমী আমলী<br />মৌখিক</td>
+            </tr>
+
+            <!-- নার্সারী -->
+            <tr class="row">
+              <td class="cls">নার্সারী<br />জামাত</td>
+              <td>আরবী<br />লিখিত</td>
+              <td>আরবী<br />মৌখিক</td>
+              <td>বাংলা<br />লিখিত</td>
+              <td>হাদীস শরীফ<br />মৌখিক</td>
+              <td>ইংরেজী<br />লিখিত</td>
+              <td>আকাঈদ, ফিকাহ<br />ও দু'আ<br />মৌখিক</td>
+              <td>গনিত<br />লিখিত</td>
+              <td class="small">সাধারণ জ্ঞান<br />ও ইলমী আমলী<br />(মৌখিক)</td>
+            </tr>
+
+            <!-- প্রথম -->
+            <tr class="row">
+              <td class="cls">প্রথম<br />জামাত</td>
+              <td>আরবী<br />লিখিত</td>
+              <td>কুরআন মাজীদ<br />ও তাজভীদ<br />মৌখিক</td>
+              <td>বাংলা<br />লিখিত</td>
+              <td>হাদীস শরীফ<br />ও দু'আ<br />মৌখিক</td>
+              <td>ইংরেজী<br />লিখিত</td>
+              <td>আকাঈদ, ফিকাহ<br />মৌখিক</td>
+              <td>গনিত<br />লিখিত</td>
+              <td class="small">সাধারণ জ্ঞান<br />(✓)<br />ও ইলমী আমলী</td>
+            </tr>
+
+            <!-- দ্বিতীয় -->
+            <tr class="row">
+              <td class="cls">দ্বিতীয়<br />জামাত</td>
+              <td>আরবী<br />লিখিত</td>
+              <td>কুরআন মাজীদ<br />ও তাজভীদ<br />মৌখিক</td>
+              <td>বাংলা<br />লিখিত</td>
+              <td>হাদীস শরীফ<br />ও দু'আ<br />মৌখিক</td>
+              <td>ইংরেজী<br />লিখিত</td>
+              <td class="small">
+                আকাঈদ, ফিকাহ,<br />আসমাউল হুসনা ও<br />আরবী ভাষা শিক্ষা<br />মৌখিক
+              </td>
+              <td>গনিত<br />লিখিত</td>
+              <td class="small">সাধারণ জ্ঞান<br />(✓)<br />ও ইলমী আমলী</td>
+            </tr>
+
+            <!-- তৃতীয় -->
+            <tr class="row">
+              <td class="cls">তৃতীয়<br />জামাত</td>
+              <td>আরবী<br />লিখিত</td>
+              <td>কুরআন মাজীদ<br />ও তাজভীদ<br />মৌখিক</td>
+              <td>বাংলা<br />লিখিত</td>
+              <td>হাদীস শরীফ<br />ও দু'আ<br />মৌখিক</td>
+              <td>ইংরেজী<br />লিখিত</td>
+              <td class="small">
+                মাসআলা,আদইয়ায়ে<br />সালাত,খুতবা ও<br />আরবী ভাষা শিক্ষা<br />মৌখিক
+              </td>
+              <td>গনিত<br />লিখিত</td>
+              <td class="small">সাধারণ জ্ঞান<br />(✓)<br />ও ইলমী আমলী</td>
+            </tr>
+          </table>
+        </div>
+
+        <ul class="notes">
+          <li>
+            পরীক্ষা আরম্ভ হওয়ার ১৫ মিনিট পূর্বে পরীক্ষার হলে উপস্থিত থাকতে হবে।
+          </li>
+          <li>
+            প্রয়োজনীয় জিনিসপত্র (যেমন: বোর্ড, কলম, পেন্সিল,রাবার,জ্যামিতি
+            বক্স,স্কেল) ইত্যাদি সাথে নিয়ে আসতে হবে।
+          </li>
+          <li>
+            ১৬ ডিসেম্বর থেকে ২০ ডিসেম্বর পর্যন্ত মাদরাসা বন্ধ থাকবে। <b></b>
+          </li>
+          <li>
+            <b
+              >২২ ডিসেম্বর থেকে ২০২৭ইং সনের ভর্তি কার্যক্রম চলবে ইনশা-আল্লাহ।</b
+            >
+          </li>
+        </ul>
+        <div class="sign">প্রধান শিক্ষকের স্বাক্ষর</div>
+      </div>
+    </div>
+  </body>
+</html>
